@@ -1,0 +1,13 @@
+{
+  "name": "garfish微前端",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev:mainapp": "cd ./packages/main-app && npm run dev",
+    "dev:vueapp": "cd ./packages/vue-app && npm run dev",
+    "dev:reactapp": "cd ./packages/react-app && npm run dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

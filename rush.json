@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+  "rushVersion": "5.130.2",
+  "pnpmVersion": "8.15.8",
+  "nodeSupportedVersionRange": ">=18.20.3 <19.0.0 || >=20.14.0 <21.0.0",
+  "gitPolicy": {},
+  "repository": {},
+  "eventHooks": {
+    "preRushInstall": [],
+    "postRushInstall": [],
+    "preRushBuild": [],
+    "postRushBuild": [],
+    "preRushx": [],
+    "postRushx": []
+  },
+  "projects": [
+    {
+      "packageName": "main-app",
+      "projectFolder": "packages/main-app",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "vue-app",
+      "projectFolder": "packages/vue-app",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "react-app",
+      "projectFolder": "packages/react-app",
+      "shouldPublish": true
+    }
+  ]
+}
