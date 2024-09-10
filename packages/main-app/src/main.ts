@@ -25,7 +25,7 @@ Garfish.run({
             name: 'react-app',
             activeWhen: '/apps/react-app',
             entry: 'http://localhost:8081', // js入口
-            // domGetter: '#subApp', 
+            domGetter: '#subApp', 
         },
     ],
     beforeLoad(appInfo) {
