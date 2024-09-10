@@ -1,10 +1,4 @@
-
-
 function Home() {
-  return (
-    <div>
-    react  Home
-    </div>
-  );
+  return <div>react18 Home</div>;
 }
 export default Home;
