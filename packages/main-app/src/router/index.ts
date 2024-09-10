@@ -16,7 +16,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'apps',
     children: [
       {
-        path: 'pahtMatch(.*)*',
+        path: ':pahtMatch(.*)*',
         component: () => import('@/views/apps/EmptyPage.vue'),
         name: 'subApp'
       }
@@ -25,8 +25,9 @@ const routes: Array<RouteRecordRaw> = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/'),
   routes,
+  strict: true
 });
 
 export default router;

@@ -11,9 +11,9 @@ export default defineConfig({
     },
   },
   server: {
+    cors: true,  // 允许跨域
     host: '0.0.0.0',
     port: 8080,
-    cors: true,  // 允许跨域
     proxy: {
       '/api': {
         target: 'http://example:3000',
@@ -21,5 +21,9 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
+  },
+  build: {
+    target: 'esnext', // 使用现代 ES 模块
+    outDir: 'dist',   // 构建输出目录
   },
 })

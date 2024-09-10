@@ -22,7 +22,6 @@ const bridge = vueBridge({
         // 在这里可以对 app 实例做一些处理，比如添加插件或状态管理
         console.log(vueInstance, props);
         vueInstance.use(newRouter('apps/vue-app'))
-
     },
 });
 

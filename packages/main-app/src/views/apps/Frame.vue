@@ -8,6 +8,8 @@
     </div>
   </template>
   <script  setup lang="ts">
+  //  import {useRouter} from 'vue-router'
+    // const router = useRouter()
   const menuList = [
     {
       name: 'vue子应用',
@@ -18,6 +20,7 @@ const baseUrl = '/apps';
 const changeMenu = (url: string) => {
   if(window.Garfish){
     window.Garfish.router.push({ path: `${baseUrl}${url}`, basename: '/' });
+    //  router.push(`${baseUrl}${url}`)
   }
 };
 </script>
