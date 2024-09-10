@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    我时候子应用
+    我是子应用
     <router-view />
   </div>
 </template>

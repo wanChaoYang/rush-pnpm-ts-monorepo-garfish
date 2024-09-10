@@ -11,6 +11,9 @@ app.use(router);
 Garfish.run({
     basename: '/',
     plugins: [GarfishEsModule()], // 使用 ES 模块加载器
+    sandbox: {
+        open: true, // 开启沙箱模式
+      },
     apps: [
         {
             name: 'vue-app',
@@ -18,12 +21,12 @@ Garfish.run({
             entry: 'http://localhost:8082', // html入口
             domGetter: '#subApp',
         },
-        // {
-        //     name: 'react-app',
-        //     activeWhen: '/react-app',
-        //     entry: 'http://localhost:8081', // js入口
-        //     // domGetter: '#subApp', 
-        // },
+        {
+            name: 'react-app',
+            activeWhen: '/apps/react-app',
+            entry: 'http://localhost:8081', // js入口
+            // domGetter: '#subApp', 
+        },
     ],
     beforeLoad(appInfo) {
         console.log('子应用开始加载', appInfo);
