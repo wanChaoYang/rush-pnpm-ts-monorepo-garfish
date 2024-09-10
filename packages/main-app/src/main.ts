@@ -12,16 +12,16 @@ Garfish.run({
     apps: [
         {
             name: 'vue-app',
-            activeWhen: '/vue-app', // 当路由匹配 '/vue-app' 时加载子应用
-            entry: 'http://localhost:8082/index.html', // html入口
+            activeWhen: '/apps/vue-app', // 当路由匹配 '/vue-app' 时加载子应用
+            entry: 'http://localhost:8082', // html入口
             domGetter: '#subApp', 
         },
-        {
-            name: 'react-app',
-            activeWhen: '/react-app',
-            entry: 'http://localhost:8081', // js入口
-            // domGetter: '#subApp', 
-        },
+        // {
+        //     name: 'react-app',
+        //     activeWhen: '/react-app',
+        //     entry: 'http://localhost:8081', // js入口
+        //     // domGetter: '#subApp', 
+        // },
     ],
 });
 
